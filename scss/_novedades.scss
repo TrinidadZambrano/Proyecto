@@ -1,0 +1,27 @@
+@import "img";
+$tamañoimg: 200px;
+$masgrandeheight: 350px;
+$masgrandewidth: 450px;
+
+.imgn1 {
+  height: $tamañoimg;
+}
+.imgn2 {
+  height: $tamañoimg;
+}
+.imgn3 {
+  height: $tamañoimg;
+}
+
+$novedad: caminosdemesa; /* Mi constante */
+p {
+  @if $novedad == caminosdemesa {
+    color: gray;
+  } @else if $novedad == mantel {
+    color: black;
+  } @else if $novedad == fundas {
+    color: green;
+  } @else {
+    color: black;
+  }
+}
